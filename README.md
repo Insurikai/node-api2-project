@@ -86,6 +86,7 @@ Configure the API to handle to the following routes:
 #### Endpoint Specifications
 
 When the client makes a `POST` request to `/api/posts`:
+//
 
 - If the request body is missing the `title` or `contents` property:
 
@@ -105,6 +106,7 @@ When the client makes a `POST` request to `/api/posts`:
   - return the following JSON object: `{ error: "There was an error while saving the post to the database" }`.
 
 When the client makes a `POST` request to `/api/posts/:id/comments`:
+
 
 - If the _post_ with the specified `id` is not found:
 
@@ -129,6 +131,7 @@ When the client makes a `POST` request to `/api/posts/:id/comments`:
   - return the following JSON object: `{ error: "There was an error while saving the comment to the database" }`.
 
 When the client makes a `GET` request to `/api/posts`:
+//
 
 - If there's an error in retrieving the _posts_ from the database:
   - cancel the request.
@@ -136,6 +139,7 @@ When the client makes a `GET` request to `/api/posts`:
   - return the following JSON object: `{ error: "The posts information could not be retrieved." }`.
 
 When the client makes a `GET` request to `/api/posts/:id`:
+//
 
 - If the _post_ with the specified `id` is not found:
 
