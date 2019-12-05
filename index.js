@@ -1,6 +1,7 @@
+require('dotenv').config();
 const express = require('express');
 const server = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 const postsRoute = require('./posts/postsRoute');
 const commentsRoute = require('./posts/comments/commentsRoute');
